@@ -36,6 +36,13 @@ data:
       external_labels:
         cluster_name: collector1
         cluster_id: collector1
+      #remote_write:
+      # - url: http://nc-promscale-connector.nc.svc.cluster.local:9201/write
+      #   queue_config:
+      #    max_shards: 30
+      #remote_read:
+      #- url: http://nc-promscale-connector.nc.svc.cluster.local:9201/read
+      #   read_recent: true
 
     rule_files:
       - /etc/prometheus/prometheus.rules
